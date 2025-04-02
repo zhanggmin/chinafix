@@ -1,9 +1,109 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.3">
   <diagram name="第 1 页" id="pa3gkfNVI6RbuI7lrr7f">
-    <mxGraphModel>
+    <mxGraphModel dx="1428" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-1" value="用户" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="814" as="geometry" />
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-2" value="充电设备" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="258" y="20" width="150" height="814" as="geometry" />
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-3" value="GQC_APP端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="458" y="20" width="150" height="814" as="geometry" />
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-4" value="GQC_PC端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="658" y="20" width="150" height="814" as="geometry" />
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-5" value="odoo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="921" y="20" width="150" height="814" as="geometry" />
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-6" value="发起充电/电流检测需求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-1" target="eM6E-PHkibmL-XP0JrTb-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="223" y="127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-7" value="发送充电数据到GQC PC" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-2" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="542" y="179" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-8" value="请求验机规则" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-4" target="eM6E-PHkibmL-XP0JrTb-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="873" y="231" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-9" value="返回验机规则" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-5" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="876" y="283" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-10" value="触发功能测试（如Face ID等20余项测试）" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-1" target="eM6E-PHkibmL-XP0JrTb-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="323" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-11" value="上传测试数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-3" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="642" y="387" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-12" value="发送验机报告" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-4" target="eM6E-PHkibmL-XP0JrTb-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="873" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-13" value="存储验机报告确认" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-5" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="876" y="491" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-14" value="发起标签打印需求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-1" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="423" y="543" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-15" value="请求标签打印相关设备信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-4" target="eM6E-PHkibmL-XP0JrTb-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="873" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-16" value="返回设备信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-5" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="876" y="647" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM6E-PHkibmL-XP0JrTb-17" value="执行标签打印操作" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="eM6E-PHkibmL-XP0JrTb-4" target="eM6E-PHkibmL-XP0JrTb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="784" y="699" />
+              <mxPoint x="784" y="729" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
